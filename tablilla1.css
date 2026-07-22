@@ -1,0 +1,159 @@
+.helene br {display: none;}
+.helene {
+    --heles: #63ccf236;
+    --hele: #798397;
+    --helea: #b0b5c0;
+    --hdeg: linear-gradient(180deg, #9aa5b8, #798397);
+    --heleimg: url(https://static.zerochan.net/Sailor.Moon.%28Character%29.full.4620394.jpg);
+    position: relative;
+    max-width: 720px;
+    width: max-content;
+    margin: auto;
+    padding: 55px;
+    background: transparent;
+    border: 1px solid var(--heles);
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--heles);
+    overflow: hidden;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    line-height: 190%;
+    color: var(--helea);
+    text-align: justify;
+    overflow:visible;
+}
+
+.helene::after{
+content:"";
+position:absolute;
+inset:12px;
+border:1px solid  var(--heles);
+border-radius:12px;
+pointer-events:none;
+}
+
+
+.helene::before {
+    content: "☾";
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 340px;
+    font-family: 'Cinzel';
+    color: var(--hele);
+    opacity: .05;
+    pointer-events: none;
+}
+
+.moon {
+font-size: 22px;
+text-align: center;
+color: var(--grupo-color);
+margin-bottom: 12px;
+}
+
+.hheader{
+position: relative;
+z-index: 2;
+text-align: center;
+}
+
+.helename{
+font-family: 'Cinzel';
+font-size: 38px;
+letter-spacing: 8px;
+color: var(--hele);
+text-transform: uppercase;
+font-weight: 800;
+}
+
+
+.helelasto{
+margin-top: 10px;
+font-family: 'EB Garamond';
+font-size: 14px;
+letter-spacing: 5px;
+text-transform: uppercase;
+color: var(--helea);
+}
+
+
+.hlinea {
+width:140px;
+height:1px;
+margin:30px auto;
+background:var(--heles);
+position:relative;
+z-index:2;
+}
+
+.h-cont br { display: block;}
+.h-cont{
+display:flex;
+align-items:flex-start;
+gap: 40px;
+position:relative;
+}
+
+
+.heltex{
+margin-top: 0;
+position: relative;
+z-index: 2;
+flex:1;
+position:relative;
+}
+
+.imgpost{
+width: 160px;
+height: 560px;
+flex-shrink:0;
+background-image:var(--heleimg);
+background-size:cover;
+background-position:center;
+border-radius:10px;
+position:sticky;
+top:35px;
+opacity:.45;
+filter: grayscale(.05);
+transition:.4s;
+padding:8px;
+background: transparent;
+border:1px solid var(--heles);
+}
+
+.imgpost::after{
+content:"";
+position:absolute;
+inset:0;
+background:
+linear-gradient(90deg,rgba(10,10,10,.45), rgba(10,10,10,.05));
+}
+
+.hportra {
+    width: 100%;
+    height: 100%;
+    background: var(--heleimg) center / cover;
+    border-radius: 6px;
+}
+
+.texto::first-letter{
+font-size: 42px;
+float: left;
+line-height: 32px;
+padding-right: 7px;
+font-family: 'Cinzel';
+color: var(--grupo-color);
+}
+
+.hquote{
+margin-top: 30px;
+text-align: center;
+font-style: italic;
+font-size: 15px;
+letter-spacing: 1px;
+color: var(--grupo-color);
+position: relative;
+z-index: 2;
+}
