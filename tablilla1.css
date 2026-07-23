@@ -43,18 +43,6 @@ Please don't repost or claim as your own.
 }
 
 
-.helene::before {
-    content: "☾";
-    position: absolute;
-    left: 35%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 340px;
-    font-family: "Segoe UI Symbol", "Noto Sans Symbols", serif, "Cinzel";
-    color: var(--hele);
-    opacity: .05;
-    pointer-events: none;
-}
 
 .moon {
 font-size: 22px;
