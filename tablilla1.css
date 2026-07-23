@@ -108,14 +108,14 @@ position:relative;
 
 .imgpost {
     width: 145px;
-    height: 100vh;
+    height: 80vh;
     flex-shrink: 0;
     background-image: var(--heleimg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     position: sticky;
-    top: 10px;
+    top: 74px;
     opacity: .45;
     filter: brightness(0.5);
     transition: .4s;
