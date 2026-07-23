@@ -193,3 +193,19 @@ z-index: 2;
 .hcredits:hover a{
     letter-spacing: 4px;
 }
+
+
+.hicon{
+    position:absolute;
+    left:35%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-size:340px;
+    color:var(--hele);
+    opacity:.05;
+    pointer-events:none;
+    z-index:0;
+    font-family:inherit;
+    line-height:1;
+    user-select:none;
+}
