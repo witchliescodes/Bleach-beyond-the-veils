@@ -166,13 +166,22 @@ z-index: 2;
     font-size: 9px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--heles);
-    opacity: .45;
+    opacity: .35;
     transition: .3s ease;
-    user-select: none;
+    position: relative;
+    z-index: 2;
+}
+
+.hcredits a{
+    color: var(--hele);
+    text-decoration: none;
+    transition: .3s ease;
 }
 
 .hcredits:hover{
-    opacity: .85;
+    opacity: .9;
+}
+
+.hcredits:hover a{
     letter-spacing: 4px;
 }
