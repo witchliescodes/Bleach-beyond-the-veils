@@ -6,7 +6,7 @@
     --hdeg: linear-gradient(180deg, #9aa5b8, #798397);
     --heleimg: url(https://static.zerochan.net/Sailor.Moon.%28Character%29.full.4620394.jpg);
     position: relative;
-    max-width: 720px;
+    max-width: 575px;
     width: max-content;
     margin: auto;
     padding: 55px;
