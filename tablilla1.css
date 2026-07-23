@@ -6,10 +6,10 @@
     --hdeg: linear-gradient(180deg, #9aa5b8, #798397);
     --heleimg: url(https://static.zerochan.net/Sailor.Moon.%28Character%29.full.4620394.jpg);
     position: relative;
-    max-width: 575px;
+    max-width: 625px;
     width: max-content;
     margin: auto;
-    padding: 55px;
+    padding: 30px;
     background: transparent;
     border: 1px solid var(--heles);
     border-radius: 10px;
@@ -20,16 +20,17 @@
     line-height: 190%;
     color: var(--helea);
     text-align: justify;
-    overflow:visible;
+    overflow: visible;
 }
 
-.helene::after{
-content:"";
-position:absolute;
-inset:12px;
-border:1px solid  var(--heles);
-border-radius:12px;
-pointer-events:none;
+.helene::after {
+    content: "";
+    position: absolute;
+    inset: 10px;
+    border: 1px solid var(--heles);
+    border-radius: 12px;
+    pointer-events: none;
+    opacity: 0.5;
 }
 
 
@@ -88,11 +89,11 @@ position:relative;
 z-index:2;
 }
 
-.h-cont{
-display:flex;
-align-items:flex-start;
-gap: 40px;
-position:relative;
+.h-cont {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
 }
 
 .heltex br { display: block;}
@@ -104,22 +105,22 @@ flex:1;
 position:relative;
 }
 
-.imgpost{
-width: 160px;
-height: 560px;
-flex-shrink:0;
-background-image:var(--heleimg);
-background-size:cover;
-background-position:center;
-border-radius:10px;
-position:sticky;
-top:35px;
-opacity:.45;
-filter: grayscale(.05);
-transition:.4s;
-padding:8px;
-background: transparent;
-border:1px solid var(--heles);
+.imgpost {
+    width: 145px;
+    height: 100vh;
+    flex-shrink: 0;
+    background-image: var(--heleimg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    opacity: .45;
+    filter: brightness(0.5);
+    transition: .4s;
+    padding: 8px;
+    background: transparent;
+    border: 1px solid var(--heles);
 }
 
 .imgpost::after{
