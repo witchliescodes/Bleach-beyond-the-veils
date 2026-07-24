@@ -106,14 +106,11 @@ position:relative;
     width: 145px;
     height: 80vh;
     flex-shrink: 0;
-    background-image: var(--heleimg);
-    background-size: cover;
-    background-position: center;
     border-radius: 10px;
     position: sticky;
     top: 74px;
     opacity: .45;
-    filter: brightness(0.5);
+    filter: brightness(.5);
     transition: .4s;
     padding: 8px;
     background: transparent;
@@ -128,11 +125,11 @@ background:
 linear-gradient(90deg,rgba(10,10,10,.45), rgba(10,10,10,.05));
 }
 
-.hportra {
-    width: 100%;
-    height: 100%;
+.hportra{
+    width:100%;
+    height:100%;
     background: var(--heleimg) center / cover;
-    border-radius: 6px;
+    border-radius:6px;
 }
 
 .heltex::first-letter{
