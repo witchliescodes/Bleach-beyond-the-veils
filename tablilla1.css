@@ -135,7 +135,7 @@ linear-gradient(90deg,rgba(10,10,10,.45), rgba(10,10,10,.05));
     border-radius: 6px;
 }
 
-.texto::first-letter{
+.heltex::first-letter{
 font-size: 42px;
 float: left;
 line-height: 32px;
