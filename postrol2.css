@@ -1,3 +1,5 @@
+.veilroldos br { display: none;}
+
 .veilroldos {
     background-color: var(--fondo1);
     outline: 1px solid var(--borde2-c);
