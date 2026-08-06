@@ -15,6 +15,10 @@
     margin: 0 auto;
     gap: 20px;
     --fuentecita: 'Spectral';
+    --grushi: rgb(238 39 17 / .4);
+    --gruqui: rgb(99 204 242  / .4);
+    --gruhol: rgb(180 200 230  / .4);
+    --gruful: rgb(40 160 80  / .4);
 }
 
 .veilrhed {
