@@ -1,4 +1,4 @@
-.veilroldos br { display: none;}
+.veilroldos br {display: none;}
 
 .veilroldos {
     background-color: var(--fondo1);
@@ -134,7 +134,7 @@ height: fit-content;
 
 .musiccover {
     width: 170px;
-    height: 170px;
+    height: stretch;
     padding: 5px;
     background: var(--fondo2);
     outline: 1px solid var(--grupo-color);
@@ -195,123 +195,120 @@ height: fit-content;
     display:none;
 }
 
-.playerbox{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    padding:14px;
-    background:rgba(255,255,255,.03);
-    border:1px solid rgba(255,255,255,.06);
-}
 
-.pk-play {
-    width: 48px;
-    height: 48px;
-    border-radius: 10px;
-    border: none;
-    background: var(--grupo-color);
-    color: white;
-    cursor: pointer;
-    font-size: 18px;
-    transition: .3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/*==========================
+PLAYER
+==========================*/
 
-.pk-play:hover{
-    transform:scale(1.08);
-}
-
-.pk-center{
-    flex:1;
-}
-
-.pk-time{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-size:12px;
-    font-family:'Open Sans';
-}
-
-.pk-progress{
-    flex:1;
-    height:4px;
-    background:#2c2c2c;
-    cursor:pointer;
-    position:relative;
-    border-radius:30px;
-}
-
-.pk-progress-fill {
-    width: 0%;
-    height: 100%;
-    background: var(--grupo-color);
-    border-radius: 30px;
-}
-
-.pk-volume{
-    display:flex;
-    align-items:center;
-    width:24px;
-    overflow:hidden;
-    transition:.35s;
-}
-
-.pk-volume:hover{
-    width:95px;
-}
-
-.pk-volume-btn {
-    width: 24px;
-    height: 24px;
-    border: none;
-    background: none;
-    color: var(--grupo-color);
-    cursor: pointer;
-    font-size: 14px;
-    flex-shrink: 0;
-    transition: .3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pk-volume-btn svg{
-    width:16px;
-    height:16px;
-    fill:currentColor;
-}
-
-.pk-volume-slider{
-    width:70px;
-    margin-left:8px;
-    opacity:0;
-    transition:.35s;
-}
-
-.pk-volume:hover .pk-volume-slider{
-    opacity:1;
-
-    .pk-volume-btn svg{
-
-    width:16px;
-
-    height:16px;
-
-    fill:currentColor;
-
-}
-}
-
-.vertex .playerbox {
+.vertex .musicplayer {
     margin: 50px;
 }
 
+.musicplayer{
+margin-top:18px;
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.05);
+transition:.35s;
+overflow:hidden;
+}
+
+.musicplayer:hover{
+border-color:var(--grupo-color);
+box-shadow:0 0 18px rgb(0 0 0 /.35);
+}
+
+.musicfake{
+display:flex;
+align-items:center;
+gap:14px;
+padding:16px 18px;
+}
+
+.musicthumb{
+width:52px;
+height:52px;
+padding:3px;
+background:var(--fondo1);
+border:1px solid var(--grupo-color);
+border-radius:10px;
+overflow:hidden;
+flex-shrink:0;
+box-shadow:0 0 15px rgb(0 0 0 /.35);
+}
+
+.musicthumb img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.musictext{
+display:flex;
+flex-direction:column;
+gap:5px;
+}
+
+.musictext b{
+margin:0;
+font-family:var(--fuente1);
+font-size:1rem;
+letter-spacing:2px;
+color: var(--textobase);
+line-height:1;
+}
+
+.musictext span{
+font: 800 .66rem Open Sans;
+letter-spacing:4px;
+text-transform:uppercase;
+color:var(--grupo-color);
+opacity:.45;
+line-height:1.4;
+}
+
+.musicline{
+margin-left:auto;
+width:110px;
+height:1px;
+background:linear-gradient(90deg,var(--grupo-color),transparent);
+opacity:.35;
+}
+
+/*----------------*/
+
+.musiccontrols{
+padding:0 18px 18px;
+margin-top:-2px;
+}
+
+.musiccontrols audio{
+display:block;
+width:100%;
+height:34px;
+border-radius:8px;
+background: var(--grupo-color);
+filter:brightness(.82);
+}
+
+/* Chrome */
+.musiccontrols audio::-webkit-media-controls-enclosure{
+background:var(--grupo-color);
+border-radius:8px;
+}
+
+.musiccontrols audio::-webkit-media-controls-panel{
+background:var(--grupo-color);
+}
+
+.musiccontrols audio::-webkit-media-controls-current-time-display,
+.musiccontrols audio::-webkit-media-controls-time-remaining-display{
+color:var(--textobase);
+font: 600 11px Open Sans;
+}
 
 /*TEXTO*/
-
+.vertex br {display: block;}
 .vertex{
     font-family: var(--fuentecita);
     font-size: 1em;
@@ -365,6 +362,7 @@ height: fit-content;
 }
 
 
+/*DATOS FINALES*/
 .datsfinv{
     width:100%;
     display:grid;
@@ -390,15 +388,7 @@ height: fit-content;
     margin-bottom:6px;
 }
 
-.dtitle{
-    grid-column:1/-1;
-    text-align:center;
-    font-family:var(--fuente1);
-    letter-spacing:6px;
-    text-transform:uppercase;
-    color: var(--grupo-color);
-    margin-bottom:6px;
-}
+
 
 .vdato span {
       font-family:var(--fuentecita);
