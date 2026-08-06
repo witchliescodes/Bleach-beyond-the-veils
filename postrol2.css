@@ -5,12 +5,13 @@
     outline: 1px solid var(--borde2-c);
     padding: 1em;
     color: var(--textobase);
-    width: 650px;
+    width: 662px;
     max-width: 690px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    top: -70px;
     margin: 0 auto;
     gap: 20px;
     --fuentecita: 'Spectral';
