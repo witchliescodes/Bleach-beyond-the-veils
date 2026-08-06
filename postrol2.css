@@ -5,7 +5,7 @@
     outline: 1px solid var(--borde2-c);
     padding: 1em;
     color: var(--textobase);
-    width: 690px;
+    width: 650px;
     max-width: 690px;
     display: flex;
     flex-direction: column;
