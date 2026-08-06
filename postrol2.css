@@ -313,8 +313,8 @@ font: 600 11px Open Sans;
 .vertex br {display: block;}
 .vertex{
     font-family: var(--fuentecita);
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 1.2em;
+    line-height: 2em;
     text-align: justify;
     margin: 15px 0 0 0;
 }
