@@ -109,7 +109,7 @@ height: fit-content;
 
 
 /*MUSICA*/
-
+.musicbox br { display: none;}
 .musicbox {
     position: relative;
     overflow: hidden;
