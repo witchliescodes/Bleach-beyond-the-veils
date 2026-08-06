@@ -199,7 +199,9 @@ height: fit-content;
 /*==========================
 PLAYER
 ==========================*/
-
+.vertex .musicplayer br {
+    display: none;
+}
 .vertex .musicplayer {
     margin: 50px;
 }
