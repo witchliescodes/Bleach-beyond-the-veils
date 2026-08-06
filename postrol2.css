@@ -338,12 +338,12 @@ font: 600 11px Open Sans;
 
 .der {
     float: right;
-    margin: 8px 0 4px 9px;
+    margin: 28px 0 4px 9px;
 }
 
 .izq {
     float: left;
-    margin: 10px 15px 3px 0;
+   margin: 20px 15px 0px 0;
 }
 .centro{
     clear:both;
