@@ -1,3 +1,4 @@
+.veilrel br { display: none;}
 .veilrel {
     width: 650px;
     max-width: 100%;
@@ -64,7 +65,6 @@
     color: var(--borde1-c);
     font-weight: 900;
 }
-
 
 .destags {
     min-height: 50px;
