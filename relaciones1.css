@@ -299,6 +299,7 @@ transform:scale(1.02);
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #777;
+    opacity: 0.4;
 }
 
 .veilcredit a {
