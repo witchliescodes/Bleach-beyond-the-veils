@@ -292,3 +292,21 @@ transform:scale(1.02);
     }
 
 }
+.veilcredit {
+    padding: 8px;
+    text-align: right;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+.veilcredit a {
+    color: var(--grupo-color);
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.veilcredit a:hover {
+    letter-spacing: 3px;
+}
