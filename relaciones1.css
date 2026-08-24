@@ -264,6 +264,9 @@ transform:scale(1.02);
     text-align: center;
 }
 
+.relinfo p br { display: block;}
+
+
 .relinfo p {
     margin: 0;
     font-size: 12px;
