@@ -1,0 +1,294 @@
+.veilrel {
+    width: 650px;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    outline: 1px solid var(--borde2-c);
+}
+
+.veilrel h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family: var(--fuente1);
+    color: var(--grupo-color);
+    padding: 10px;
+    text-align: end;
+}
+
+.veilrel > input {
+    display: none;
+}
+
+.retags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    padding: 10px;
+    background: var(--fondo2);
+    box-sizing: border-box;
+}
+
+.retags label {
+    cursor: pointer;
+    padding: 7px 12px;
+    background: var(--fondo1);
+    color: var(--color2);
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .2s ease;
+    line-height: 1.5em;
+        font-weight: 900;
+}
+
+.retags label:hover {
+    background: var(--grupo-color);
+    color: var(--borde1-c);
+    letter-spacing: 1px;
+}
+
+
+#rel-familia:checked ~ .retags label[for="rel-familia"],
+#rel-pareja:checked ~ .retags label[for="rel-pareja"],
+#rel-romance:checked ~ .retags label[for="rel-romance"],
+#rel-complicado:checked ~ .retags label[for="rel-complicado"],
+#rel-companeros:checked ~ .retags label[for="rel-companeros"],
+#rel-amigos:checked ~ .retags label[for="rel-amigos"],
+#rel-conocidos:checked ~ .retags label[for="rel-conocidos"],
+#rel-enemigos:checked ~ .retags label[for="rel-enemigos"],
+#rel-nemesis:checked ~ .retags label[for="rel-nemesis"] {
+    background: var(--grupo-color);
+    color: var(--borde1-c);
+    font-weight: 900;
+}
+
+
+.destags {
+    min-height: 50px;
+    padding: 10px;
+    background: var(--grupo-color);
+    box-sizing: border-box;
+    font-size: 0.8em;
+    line-height: 1.5;
+    color: var(--borde2-c);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.destags .desc {
+    display: none;
+}
+
+
+#rel-familia:checked ~ .destags .familia,
+#rel-pareja:checked ~ .destags .pareja,
+#rel-romance:checked ~ .destags .romance,
+#rel-complicado:checked ~ .destags .complicado,
+#rel-companeros:checked ~ .destags .companeros,
+#rel-amigos:checked ~ .destags .amigos,
+#rel-conocidos:checked ~ .destags .conocidos,
+#rel-enemigos:checked ~ .destags .enemigos,
+#rel-nemesis:checked ~ .destags .nemesis {
+    display: block;
+}
+
+
+.contreltag {
+    padding: 15px;
+    background: var(--fondo2);
+}
+
+
+.relsi {
+    display: none;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: var(--borde2-c);
+    color: var(--color2);
+    box-sizing: border-box;
+    outline: 1px solid var(--grupo-color);
+    opacity: 0.5;
+    transition: 200ms all ease-in-out;
+}
+
+.relsi:hover {
+    opacity: 1;
+}
+
+
+.veilrel:has(#rel-familia:checked) .contreltag .relsi {
+    display: none;
+}
+
+.veilrel:has(#rel-familia:checked) .contreltag .familia {
+    display: flex;
+}
+
+
+.veilrel:has(#rel-pareja:checked) .contreltag .relsi {
+    display: none;
+}
+
+.veilrel:has(#rel-pareja:checked) .contreltag .pareja {
+    display: flex;
+}
+
+
+.veilrel:has(#rel-romance:checked) .contreltag .relsi {
+    display: none;
+}
+
+.veilrel:has(#rel-romance:checked) .contreltag .romance {
+    display: flex;
+}
+
+
+.veilrel:has(#rel-complicado:checked) .contreltag .relsi {
+    display: none;
+}
+
+.veilrel:has(#rel-complicado:checked) .contreltag .complicado {
+    display: flex;
+}
+
+
+.veilrel:has(#rel-companeros:checked) .contreltag .relsi {
+    display: none;
+}
+
+.veilrel:has(#rel-companeros:checked) .contreltag .companeros {
+    display: flex;
+}
+
+
+.veilrel:has(#rel-amigos:checked) .contreltag .relsi {
+    display: none;
+}
+
+.veilrel:has(#rel-amigos:checked) .contreltag .amigos {
+    display: flex;
+}
+
+
+.veilrel:has(#rel-conocidos:checked) .contreltag .relsi {
+    display: none;
+}
+
+.veilrel:has(#rel-conocidos:checked) .contreltag .conocidos {
+    display: flex;
+}
+
+
+.veilrel:has(#rel-enemigos:checked) .contreltag .relsi {
+    display: none;
+}
+
+.veilrel:has(#rel-enemigos:checked) .contreltag .enemigos {
+    display: flex;
+}
+
+
+.veilrel:has(#rel-nemesis:checked) .contreltag .relsi {
+    display: none;
+}
+
+.veilrel:has(#rel-nemesis:checked) .contreltag .nemesis {
+    display: flex;
+}
+
+.relsi img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    flex-shrink: 0;
+    outline: 1px solid var(--grupo-color);
+    outline-offset: -5px;
+    transition: 300ms all ease-in-out;
+}
+
+.relsi:hover img {
+transform:scale(1.02);
+}
+
+.relinfo {
+    flex: 1;
+        min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.vreda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 0;
+    margin: 0 0 10px 0;
+    background: transparent;
+    position: relative;
+}
+
+.vrelin {
+    content: " ";
+    width: 20%;
+    height: 1px;
+    border-bottom: 1px solid var(--grupo-color);
+    margin: 0 auto;
+}
+
+.relinfo h1 {
+    background: transparent;
+    font-size: 1em;
+    font-weight: 800;
+    color: var(--grupo-color);
+    line-height: 1em;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: var(--fuente1);
+}
+
+.relinfo b {
+    display: block;
+    margin-bottom: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--fondo2);
+    letter-spacing: 1px;
+    padding: 5px;
+    min-width: 80px;
+    background: var(--grupo-color);
+    text-align: center;
+}
+
+.relinfo p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: justify;
+    hyphens: auto;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .relsi {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .relsi img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .retags label {
+        font-size: 9px;
+        padding: 6px 8px;
+    }
+
+}
